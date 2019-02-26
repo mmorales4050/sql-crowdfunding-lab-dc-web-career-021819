@@ -60,8 +60,7 @@ describe "crowdfunder sql" do
     end
 
     it "creates a pledges table with a project_id field" do
-      expect{@db.execute("SELECT project_id FROM pledges;")}.to_not raise_exception
-    end
+      expect{@db.execute("SELECT project_id FROM pledges;")}.to_not raise_exception    end
 
   end
 
